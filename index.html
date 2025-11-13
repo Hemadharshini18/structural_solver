@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Structural Solver</title></head>
+<body>
+<h1>Structural Solver</h1>
+<form action="/analyze" method="post">
+    Span (m): <input name="span" value="6"><br>
+    Point Load (kN): <input name="pointLoad" value="10"><br>
+    Position (m): <input name="pointPos" value="2"><br>
+    UDL (kN/m): <input name="udlIntensity" value="0"><br>
+    <button type="submit">Analyze</button>
+</form>
+</body>
+</html>
