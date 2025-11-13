@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Results</title></head>
+<body>
+<h1>Results</h1>
+<table border="1">
+<tr><th>x</th><th>Shear</th><th>Moment</th></tr>
+<tr th:each="r : ${results}">
+<td th:text="${r.x}"></td>
+<td th:text="${r.shear}"></td>
+<td th:text="${r.moment}"></td>
+</tr>
+</table>
+<a href="/">Back</a>
+</body>
+</html>
